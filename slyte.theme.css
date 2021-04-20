@@ -1,0 +1,42 @@
+/**
+* @name SlyteTheme
+* @author onexev
+* @authorLink https://vk.com/prostne
+* @version 1.0
+* @source https://github.com/1xev3/Slyte-Theme
+* @description ello this is my theme lol.
+*/
+
+/* BASE (DONT DELETE) */
+@import url("https://github.com/1xev3/Slyte-Theme/blob/main/slytebase.css");
+
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+
+/* CONFIG */
+:root {
+--title: "S L Y T E";
+--titlecolor: rgb(107 100 115);
+--background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
+--font: 'Montserrat', sans-serif;
+--time: 10s;
+--ListenAlong: "Listen Along";
+
+--Online: rgb(0 255 136);
+--Idle: rgb(0 99 156);
+--Unavailable: rgb(228 15 0);
+--Offline: rgb(90 95 100);
+--white: rgb(202 200 255);
+--grey: rgb(77 70 85);
+--darkgrey: rgb(18 18 18);
+--grey5: rgb(77 70 85 / 50%);
+--darkgrey5: rgb(18 18 18 / 75%);
+--green: rgb(30, 215, 96);
+--ActiveBox: rgb(235 235 235);
+--StreamingColor: rgb(78 0 180);
+
+--TitleBG: var(--darkgrey5);
+--Sidebar: var(--darkgrey5);
+--HoverMessage: var(--darkgrey5);
+--Highlighted: var(--grey5);
+}
