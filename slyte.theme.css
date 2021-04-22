@@ -2,7 +2,7 @@
 * @name SlyteTheme
 * @author onexev
 * @authorLink https://vk.com/prostne
-* @version 1.0
+* @version 1.3
 * @source https://github.com/1xev3/Slyte-Theme
 * @description ello this is my theme lol.
 */
@@ -15,7 +15,7 @@
 
 /* CONFIG */
 :root {
---title: "S L Y T E";
+--title: "";
 --titlecolor: rgb(107 100 115);
 --background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
 --font: 'Montserrat', sans-serif;
@@ -28,9 +28,10 @@
 --Offline: rgb(90 95 100);
 --white: rgb(202 200 255);
 --grey: rgb(77 70 85);
---darkgrey: rgb(18 18 18);
+--darkgrey: rgb(18 18 22);
+--darkgrey2: rgb(28 28 32);
 --grey5: rgb(77 70 85 / 50%);
---darkgrey5: rgb(18 18 18 / 75%);
+--darkgrey5: rgb(18 18 22 / 75%);
 --green: rgb(30, 215, 96);
 --ActiveBox: rgb(235 235 235);
 --StreamingColor: rgb(78 0 180);
@@ -39,4 +40,15 @@
 --Sidebar: var(--darkgrey5);
 --HoverMessage: var(--darkgrey5);
 --Highlighted: var(--grey5);
+
+--rs-small-spacing: 0px;
+--rs-large-spacing: 0px;
+--rs-width: 1.5px;
+--rs-avatar-shape: 50%;
+--rs-online-color: #43b581;
+--rs-idle-color: #faa61a;
+--rs-dnd-color: #f04747;
+--rs-offline-color: #636b75;
+--rs-streaming-color: #643da7;
+--rs-invisible-color: #747f8d;
 }
