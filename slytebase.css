@@ -2,9 +2,13 @@
 :root {
 --title: "";
 --titlecolor: rgb(107 100 115);
+
 --background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
+--darken: 75%;
+
 --font: 'Montserrat', sans-serif;
 --time: 10s;
+--blur: 10px;
 --ListenAlong: "Listen Along";
 
 --Online: rgb(0 255 136);
@@ -16,7 +20,7 @@
 --darkgrey: rgb(18 18 22);
 --darkgrey2: rgb(28 28 32);
 --grey5: rgb(77 70 85 / 50%);
---darkgrey5: rgb(18 18 22 / 75%);
+--darkgrey5: rgb(18 18 22 / var(--darken));
 --green: rgb(30, 215, 96);
 --ActiveBox: rgb(235 235 235);
 --StreamingColor: rgb(78 0 180);
@@ -41,29 +45,51 @@
 
 /* BACKGROUND */
 
-.root-217Brm {
-    background: center no-repeat var(--background) !important;
+::selection {
+    background-color: var(--Highlighted);
+}
+
+/* TALK BACKGROUND */
+.wrapper-2qzCYF {
+    background: transparent !important;
+}
+
+/* CODEBLOCK */
+.textContainer-C0szpm {
+    background: var(--darkgrey5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 0px;
+}
+.colorHeaderSecondary-3Sp3Ft {
+    background: var(--darkgrey);
+    border: none;
+    border-radius: 0px;
+}
+
+/* BACKGROUND IN SETTINGS */
+.background-1QDuV2 {
+    background: transparent;
+}
+.fieldList-21DyL8 {
+    background: var(--grey5);
 }
 
 .button-1YfofB {
     background: transparent !important;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
 }
 
+/* EMBED BACKGROUND */
 .embedWrapper-lXpS3L {
     background: transparent;
     border-radius: 0px;
-    backdrop-filter: blur(20px);
 }
 
 .searchBar-6Kv8R2, .tabBody-3YRQ8W:before {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0px;
-}
-
-::selection {
-    background-color: var(--Highlighted);
 }
 
 ::-webkit-input-placeholder, ::placeholder, body, button, input, code, select, textarea {
@@ -102,7 +128,7 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 }
 
 .container-3Mxszk, .chat-3bRxxu, .container-1D34oG {
-    border-radius: 5px 0 0 0;
+    border-radius: 0px;
     background: var(--darkgrey5) !important;
 }
 
@@ -112,6 +138,7 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 
 .sidebar-2K8pFh {
     background: var(--Sidebar) !important;
+    border-radius: 0px !important;
 }
 
 .menu-3sdvDG, .container-3XJ8ns, .modal-yWgWj-, .messagesPopoutWrap-1MQ1bW, .after_inlineCode-1KfVgj, .before_inlineCode-1G9rTK, .inlineCode-2ngu6Y, .wrapper-2aW0bm, .headerNormal-T_seeN, .uploadModal-2ifh8j {
@@ -141,10 +168,14 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
     border-radius: 0 .25em .25em 0 !important;
 }
 
-.wrapper-35wsBm, .wrapper-3D2qGf, .childWrapper-anI2G9, .container-3ayLPN, .descriptionBox-1EKQKL {
+.wrapper-35wsBm, .wrapper-3D2qGf, .container-3ayLPN, .descriptionBox-1EKQKL {
     box-shadow: none;
     background: var(--darkgrey5) !important;
     border-radius: .25em !important;
+}
+
+.childWrapper-anI2G9, .childWrapper-anI2G9:hover, .childWrapper-anI2G9:active {
+    background: transparent !important;
 }
 
 .iconBackgroundTierNone-3MPhMJ, .iconBackgroundTierOne-2LhaMB, .iconBackgroundTierThree-3qw3JX, .iconBackgroundTierTwo-3bCmdc {
@@ -421,7 +452,7 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 
 .root-SR8cQa {
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
     position: center;
     right: 0;
     height: calc(80vh);
@@ -580,7 +611,7 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 
 .body-3ND3kc, .bodyInner-245q0L, .footer-1fjuF6 {
     background: transparent !important;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
 }
 
 .userPopout-3XzG_A {
@@ -600,7 +631,7 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 
 .sidebarRegionScroller-3MXcoP, .contentRegion-3nDuYy {
     background: var(--darkgrey5);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
 }
 
 .contentRegion-3nDuYy {
@@ -751,7 +782,7 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
 
 .body-3iLsc4, .footer-1fjuF6, .footer-1FPmkC, .footer-2gL1pp {
     background-color: transparent !important;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
 }
 
 .item-3T2z1R {
@@ -1178,7 +1209,8 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
 }
 
 .modal-3c3bKg {
-    background: var(--darkgrey5);
+    background: transparent;
+    backdrop-filter: blur(5px);
 }
 
 .modal-3c3bKg .header-QKLPzZ .avatar-3EQepX[aria-label^="onexev"]+.headerInfo-30uryT .nameTag-2IFDfL:after, [src*="avatars/303555502330085376/"]+.header-23xsNx .username-1A8OIy:after {
@@ -1522,8 +1554,12 @@ svg [mask="url(#svg-mask-squircle)"] {
 }
 
 .wrapper-2jXpOf.modeUnread-1qO3K1 .numberBadge-2s8kKX {
-    height: 20px;
+    height: 10px !important;
     width: 20px !important;
+}
+
+.divider-3_HH5L {
+    background: var(--grey5);
 }
 
 .container-3w7J-x {
