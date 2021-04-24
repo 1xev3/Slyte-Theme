@@ -17,9 +17,13 @@
 :root {
 --title: "";
 --titlecolor: rgb(107 100 115);
+
 --background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
+--darken: 75%;
+
 --font: 'Montserrat', sans-serif;
 --time: 10s;
+--blur: 10px;
 --ListenAlong: "Listen Along";
 
 --Online: rgb(0 255 136);
@@ -31,7 +35,7 @@
 --darkgrey: rgb(18 18 22);
 --darkgrey2: rgb(28 28 32);
 --grey5: rgb(77 70 85 / 50%);
---darkgrey5: rgb(18 18 22 / 75%);
+--darkgrey5: rgb(18 18 22 / var(--darken));
 --green: rgb(30, 215, 96);
 --ActiveBox: rgb(235 235 235);
 --StreamingColor: rgb(78 0 180);
