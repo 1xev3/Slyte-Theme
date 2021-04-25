@@ -1,9 +1,9 @@
 /* CONFIG */
 :root {
---title: "";
+--title: "S L Y T E";
 --titlecolor: rgb(107 100 115);
 
---background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
+--background: url("https://cdn.fishki.net/upload/post/201504/18/1505951/46eb5f16148c52ccfb11310a191315b9.jpg");
 --darken: 75%;
 
 --font: 'Montserrat', sans-serif;
@@ -49,6 +49,21 @@
     background-color: var(--Highlighted);
 }
 
+.wordmark-2iDDfm {
+    display: none;
+}
+
+.channelNotice-1-XFjC, .buttons-3JBrkn>button:not(.buttonContainer-28fw2U)>div:not(.translateButton-DhP9x8), .containerDefault--pIXnN [class^="mainContent"]>svg {
+    display: none !important;
+}
+.icon-1DeIlz {
+    width: 15px !important;
+    height: 15px !important;
+}
+.users-3kndPl {
+    background: var(--grey5);
+}
+
 /* TALK BACKGROUND */
 .wrapper-2qzCYF {
     background: transparent !important;
@@ -66,6 +81,12 @@
     border: none;
     border-radius: 0px;
 }
+.scrollbarGhostHairline-1mSOM1 {
+    background: var(--darkgrey5) !important;
+    backdrop-filter: blur(5px);
+    border:none !important;
+    border-radius: 15px;
+}
 
 /* BACKGROUND IN SETTINGS */
 .background-1QDuV2 {
@@ -80,10 +101,19 @@
     backdrop-filter: blur(var(--blur));
 }
 
-/* EMBED BACKGROUND */
+/* EMBED */
 .embedWrapper-lXpS3L {
     background: transparent;
     border-radius: 0px;
+}
+.embedMargin-UO5XwE {
+    margin-top: 0px !important;
+}
+.embedVideoImageComponentInner-2Ujh_1 {
+    border-radius: 30px !important;
+}
+.embedVideo-3nf0O9 {
+    border-radius: 0px !important;
 }
 
 .searchBar-6Kv8R2, .tabBody-3YRQ8W:before {
@@ -216,12 +246,11 @@ body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
 }
 
 .typeWindows-1za-n7:after {
-    text-align: -webkit-center;
-    padding: 0;
+    text-align: -webkit-left;
+    padding: 5px;
     width: 100%;
     content: var(--title);
     color: var(--titlecolor);
-    margin: 0 auto;
 }
 
 .guildsError-b7zR5H {
