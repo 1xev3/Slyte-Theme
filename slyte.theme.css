@@ -2,7 +2,7 @@
 * @name SlyteTheme
 * @author onexev
 * @authorLink https://vk.com/prostne
-* @version 1.5
+* @version 1.6
 * @source https://github.com/1xev3/Slyte-Theme
 * @description ello this is my theme lol.
 */
@@ -15,10 +15,10 @@
 
 /* CONFIG */
 :root {
---title: "";
+--title: "S L Y T E";
 --titlecolor: rgb(107 100 115);
 
---background: url("https://cutewallpaper.org/21/sad-anime-wallpaper-hd/39-Sad-Anime-Girl-Wallpapers-HD-Backgrounds-Free-Download-.jpg");
+--background: url("https://cdn.fishki.net/upload/post/201504/18/1505951/46eb5f16148c52ccfb11310a191315b9.jpg");
 --darken: 75%;
 
 --font: 'Montserrat', sans-serif;
@@ -56,3 +56,4 @@
 --rs-streaming-color: #643da7;
 --rs-invisible-color: #747f8d;
 }
+
