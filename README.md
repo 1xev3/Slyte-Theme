@@ -1,5 +1,5 @@
 # Slyte-Theme
-Theme for better discord
+Theme for Better Discord.
 Supports https://github.com/Fuguu/videoBackground
 
 Install:
