@@ -44,6 +44,24 @@
 
 
 /* BACKGROUND */
+body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
+    background: center / cover no-repeat var(--background) !important;
+}
+
+
+/* VIDEO BACKGROUND(NEED PLUGIN)
+PLUGIN URL:https://github.com/Fuguu/videoBackground */
+.fullscreen-bg-video, .fullscreen-bg video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 
 ::selection {
     background-color: var(--Highlighted);
@@ -147,10 +165,6 @@
 .categoryWrapper-UZ5YNj, .appMount-3lHmkl, .container-16j22k {
     background: transparent !important;
     position: fixed;
-}
-
-body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
-    background: center / cover no-repeat var(--background) !important;
 }
 
 .header-ykumBX, .messageGroupWrapper-o-Zw7G, .inset-3sAvek, .autocompleteArrow-Zxoy9H, .autocompleteHeaderBackground-30T70q, .cardPrimary-1Hv-to, .container-1D34oG, .topSectionNormal-2-vo2m, .emptyCard-1RJw8n {
