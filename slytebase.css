@@ -15,7 +15,7 @@
 --Idle: rgb(0 99 156);
 --Unavailable: rgb(228 15 0);
 --Offline: rgb(90 95 100);
---white: rgb(202 200 255);
+--white: rgb(230, 230, 245);
 --grey: rgb(77 70 85);
 --darkgrey: rgb(18 18 22);
 --darkgrey2: rgb(28 28 32);
@@ -27,7 +27,7 @@
 
 --TitleBG: var(--darkgrey5);
 --Sidebar: var(--darkgrey5);
---HoverMessage: var(--darkgrey5);
+--HoverMessage: var(--grey5);
 --Highlighted: var(--grey5);
 
 --rs-small-spacing: 0px;
@@ -40,6 +40,9 @@
 --rs-offline-color: #636b75;
 --rs-streaming-color: #643da7;
 --rs-invisible-color: #747f8d;
+
+/* DISCORD OVERWRITE */
+--radio-group-dot-foreground: var(--green);
 }
 
 
@@ -47,7 +50,6 @@
 body, .preview-2nSL_2, #user-settings.layer-3QrUeG {
     background: center / cover no-repeat var(--background) !important;
 }
-
 
 /* VIDEO BACKGROUND(NEED PLUGIN)
 PLUGIN URL:https://github.com/Fuguu/videoBackground */
@@ -62,24 +64,66 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
     left: 0;
 }
 
-
 ::selection {
     background-color: var(--Highlighted);
 }
 
-.wordmark-2iDDfm {
-    display: none;
+/* BUTTONS */
+.lookFilled-1Gx00P {
+    background-color: var(--darkgrey5) !important;
+}
+.lookFilled-1Gx00P:hover {
+    background-color: var(--grey5) !important;
+}
+.icon-22AiRD {
+    color: var(--white) !important;
+}
+.icon-22AiRD:hover {
+    color: var(--green) !important;
+}
+.selected-3s45Ha {
+    background: linear-gradient(90deg, var(--grey) 0%, rgba(0,212,255,0) 100%) !important;
+    border-radius: 0px !important;
+}
+.item-PXvHYJ:hover {
+    border-radius: 0px !important;
+    background: linear-gradient(90deg, var(--grey5) 0%, rgba(0,212,255,0) 100%) !important;
+}
+.item-26Dhrx {
+    background: transparent;
+}
+.item-26Dhrx[aria-checked=true] {
+    background: var(--grey5);
+}
+.actionButton-3W1xZa {
+    color: var(--green) !important;
 }
 
-.channelNotice-1-XFjC, .buttons-3JBrkn>button:not(.buttonContainer-28fw2U)>div:not(.translateButton-DhP9x8), .containerDefault--pIXnN [class^="mainContent"]>svg {
-    display: none !important;
+/* CHAT HOVER ETC */
+.content-1x5b-n:hover {
+    background: linear-gradient(90deg, var(--HoverMessage) 0%, rgba(0,212,255,0) 100%) !important;
+    border-radius: 20px;
 }
-.icon-1DeIlz {
-    width: 15px !important;
-    height: 15px !important;
+.selected-aXhQR6.container-2Pjhx-:before, .wrapper-2jXpOf.modeSelected-346R90:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, var(--grey) 0%, rgba(0,212,255,0) 100%) !important;
+    border-radius: 20px;
 }
-.users-3kndPl {
-    background: var(--grey5);
+.name-3l27Hl {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1500 !important;
+}
+.addButtonIcon-2CbG1X {
+    color: var(--grey) !important;
+}
+.barFill-23-gu- {
+    background: var(--green);
 }
 
 /* TALK BACKGROUND */
@@ -113,6 +157,11 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
 .fieldList-21DyL8 {
     background: var(--grey5);
 }
+.vertical-V37hAW {
+    border-radius: 40px !important;
+    background: var(--darkgrey5) !important;
+    box-shadow: 0px 0px 90px 12px var(--grey5);
+}
 
 .button-1YfofB {
     background: transparent !important;
@@ -120,6 +169,13 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
 }
 
 /* EMBED */
+.modal-qgFCbT {
+    overflow: hidden !important;
+    border-radius: 0px !important;
+}
+.downloadLink-1ywL9o {
+    overflow: hidden !important;
+}
 .embedWrapper-lXpS3L {
     background: transparent;
     border-radius: 0px;
@@ -132,6 +188,26 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
 }
 .embedVideo-3nf0O9 {
     border-radius: 0px !important;
+}
+
+.wordmark-2iDDfm {
+    display: none;
+}
+
+.gradientContainer-10lXLB, .gradientTop-3UWg3T, .gradientBottom-3X4SdK {
+    display: none;
+}
+
+.channelNotice-1-XFjC, .buttons-3JBrkn>button:not(.buttonContainer-28fw2U)>div:not(.translateButton-DhP9x8), .containerDefault--pIXnN [class^="mainContent"]>svg {
+    display: none !important;
+}
+.icon-1DeIlz {
+    width: 15px !important;
+    height: 15px !important;
+    color: var(--grey5);
+}
+.users-3kndPl {
+    background: var(--grey5);
 }
 
 .searchBar-6Kv8R2, .tabBody-3YRQ8W:before {
@@ -525,6 +601,7 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
 
 .message-2qnXI6.selected-2P5D_Z, .mouse-mode .message-2qnXI6:hover {
     background-color: var(--darkgrey5);
+    border-radius: 20px;
 }
 
 .attachWrapper-2TRKBi, .userInfoSection-, .activityPanel-28dQGo, .tabBarContainer-1s1u-z, .userInfoSection-2acyCx {
@@ -692,12 +769,16 @@ PLUGIN URL:https://github.com/Fuguu/videoBackground */
     padding: 0;
 }
 
+/*MSG DELETE WINDOW */
 .root-1gCeng:not(.gallery-JViwKR) {
     max-height: -webkit-fill-available;
     width: 100%;
-    background: var(--darkgrey) !important;
+    background: var(--darkgrey5) !important;
     margin-top: 20px;
     overflow-y: auto;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 90px 12px var(--grey5);
 }
 
 .footer-1fjuF6 {
@@ -1097,19 +1178,7 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
 }
 
 .emptyChannelIcon-cc932w {
-    width: 60px;
-    height: 60px;
-    margin-bottom: -45px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: var(--grey5);
-    background-image: none;
-}
-
-.emptyChannelIcon-cc932w:before {
-    content: var(--Channel);
-    line-height: 60px;
-    font-size: 35px;
+    display: none;
 }
 
 .emptyChannelIcon-cc932w+.header-3uLluP, .emptyChannelIcon-cc932w+.header-3uLluP+.description-1sDbzZ {
@@ -1127,15 +1196,6 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
 
 .titleName-3-Lp3Z+.subtitle-2UIIw0 {
     margin: 0;
-}
-
-.titleName-3-Lp3Z:after, .emptyChannelIcon-cc932w+.header-3uLluP:before {
-    margin-left: 65px;
-    content: var(--WelcomeMessage);
-    font-size: 1.35rem;
-    line-height: 1.35rem;
-    font-weight: 300;
-    display: block;
 }
 
 .titleName-3-Lp3Z:after {
@@ -1249,11 +1309,6 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
 
 .size-3rFEHg:active:after {
     background: transparent !important;
-}
-
-.modal-3c3bKg {
-    background: transparent;
-    backdrop-filter: blur(5px);
 }
 
 .modal-3c3bKg .header-QKLPzZ .avatar-3EQepX[aria-label^="onexev"]+.headerInfo-30uryT .nameTag-2IFDfL:after, [src*="avatars/303555502330085376/"]+.header-23xsNx .username-1A8OIy:after {
@@ -1383,17 +1438,6 @@ img[src="/assets/9f358f466473586417baee7bacfba5ca.svg"] {
     right: 0;
     opacity: .25;
     background-color: var(--Unavailable);
-}
-
-.selected-aXhQR6.container-2Pjhx-:before, .wrapper-2jXpOf.modeSelected-346R90:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(90deg, var(--grey) 0%, rgba(0,212,255,0) 100%);
-    border-radius: 20px;
 }
 
 .selected-aXhQR6.container-2Pjhx- .layout-2DM8Md {
@@ -1602,7 +1646,8 @@ svg [mask="url(#svg-mask-squircle)"] {
 }
 
 .divider-3_HH5L {
-    background: var(--grey5);
+    border-radius: 0px;
+    border-top: thin solid var(--grey) !important;
 }
 
 .container-3w7J-x {
