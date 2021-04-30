@@ -2,7 +2,7 @@
 * @name SlyteTheme
 * @author onexev
 * @authorLink https://vk.com/prostne
-* @version 1.6
+* @version 1.8
 * @source https://github.com/1xev3/Slyte-Theme
 * @description ello this is my theme lol.
 */
@@ -30,7 +30,7 @@
 --Idle: rgb(0 99 156);
 --Unavailable: rgb(228 15 0);
 --Offline: rgb(90 95 100);
---white: rgb(202 200 255);
+--white: rgb(230, 230, 245);
 --grey: rgb(77 70 85);
 --darkgrey: rgb(18 18 22);
 --darkgrey2: rgb(28 28 32);
@@ -42,7 +42,7 @@
 
 --TitleBG: var(--darkgrey5);
 --Sidebar: var(--darkgrey5);
---HoverMessage: var(--darkgrey5);
+--HoverMessage: var(--grey5);
 --Highlighted: var(--grey5);
 
 --rs-small-spacing: 0px;
@@ -55,5 +55,8 @@
 --rs-offline-color: #636b75;
 --rs-streaming-color: #643da7;
 --rs-invisible-color: #747f8d;
+
+/* DISCORD OVERWRITE */
+--radio-group-dot-foreground: var(--green);
 }
 
